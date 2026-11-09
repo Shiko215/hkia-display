@@ -34,3 +34,18 @@ To verify collection, visit the production website with analytics enabled and ch
 ## Disclaimer
 
 Unofficial simulation for entertainment. No live flight data. Not affiliated with, authorised or endorsed by Airport Authority Hong Kong or any airline. Rights in original designs and trademarks belong to their respective owners.
+
+## Airport announcements
+
+The announcement panel uses the browser's Speech Synthesis API and an original four-note Web Audio chime. No cloud API key or external audio asset is needed. It is a simulation, not an official airport recording.
+
+- Default sequence: **Cantonese → Mandarin → English**. Cantonese/English and single-language modes are also available.
+- Choose a voice independently for each language, adjust volume/speed, preview the script, play and stop.
+- Scripts use a snapshot of the current flight, destination, gate and status. Flight digits are spoken separately; Chinese gate numbers use normal number words.
+- Missing voices are explicitly reported and skipped. Cantonese is never silently replaced by Mandarin. Use Refresh voices after enabling/installing system voices; online voices may need network access.
+- Manual announcement types: current status, boarding soon, now boarding, final call, delayed and gate closed.
+- Automatic announcements default to off. Opt in to status changes only, or status changes plus a five-/ten-minute interval. Automatic announcements always follow the displayed status, and do not play for no-status mode. Display language rotation never triggers speech.
+- Press Stop to cancel the speech/chime queue and disable automatic announcements. The page stops queued announcements when closed. Background/locked devices may suspend speech or timers.
+- The device must support Speech Synthesis for speech playback. Fullscreen does not affect the selected speech languages.
+
+GA4 also receives `announcement_play` with only announcement status, language mode and whether the request was automatic. Flight/destination text is not added to analytics.
