@@ -39,7 +39,7 @@ Unofficial simulation for entertainment. No live flight data. Not affiliated wit
 
 The announcement panel uses the browser's Speech Synthesis API and an original four-note Web Audio chime. No cloud API key or external audio asset is needed. It is a simulation, not an official airport recording.
 
-- Default sequence: **Cantonese → Mandarin → English**. Cantonese/English and single-language modes are also available.
+- Default sequence: **Cantonese → English → Mandarin**. Cantonese/English and single-language modes are also available.
 - Choose a voice independently for each language, adjust volume/speed, preview the script, play and stop.
 - Scripts use a snapshot of the current flight, destination, gate and status. Flight digits are spoken separately; Chinese gate numbers use normal number words.
 - Missing voices are explicitly reported and skipped. Cantonese is never silently replaced by Mandarin. Use Refresh voices after enabling/installing system voices; online voices may need network access.
@@ -49,3 +49,9 @@ The announcement panel uses the browser's Speech Synthesis API and an original f
 - The device must support Speech Synthesis for speech playback. Fullscreen does not affect the selected speech languages.
 
 GA4 also receives `announcement_play` with only announcement status, language mode and whether the request was automatic. Flight/destination text is not added to analytics.
+
+### Hong Kong terminal announcement style
+
+Scripts use formal passenger-address language instead of conversational Cantonese, include bilingual airline names where available, and pronounce 24-hour estimated departure times as spoken hours/minutes. Optional codeshare reading is off by default. Default language gap is 1.5 seconds (adjustable to 0.8 or 2.5 seconds). Both Cantonese-English-Mandarin and Cantonese-Mandarin-English sequences are selectable.
+
+These are original simulation templates, not an official transcript. Public references: [passenger recording of CX380 gate change announcement](https://www.youtube.com/watch?v=lA3BtoRVrHo) and [Cathay boarding instructions](https://flights.cathaypacific.com/zh_HK/travel-information/group-boarding.html). A single recording does not establish a universal language order. The synthesised chime is original; browser-native speech has no added terminal reverb and voice quality depends on the device.
