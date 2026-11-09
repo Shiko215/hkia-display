@@ -1,0 +1,11 @@
+# GATE 852
+
+> Free, unofficial Hong Kong airport gate display simulator by Aurora Studio. Not a source of real-time flight information.
+
+## Primary page
+- [GATE 852](https://hkia.aurora-studio.org/): Editable flight numbers and destinations, Hong Kong 24-hour clock, five-second Traditional Chinese/English rotation, boarding statuses and 16:9 fullscreen.
+- [FAQ](https://hkia.aurora-studio.org/#faq): Purpose, usage, clock, language, statuses and local storage.
+- [Source](https://github.com/Shiko215/hkia-display): Standalone HTML source.
+
+## Attribution
+Created by Aurora Studio. Inspired by Hong Kong International Airport gate displays. Not affiliated with, authorised or endorsed by Airport Authority Hong Kong or any airline. All flight data is simulated.
