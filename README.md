@@ -55,3 +55,7 @@ GA4 also receives `announcement_play` with only announcement status, language mo
 Scripts use formal passenger-address language instead of conversational Cantonese, include bilingual airline names where available, and pronounce 24-hour estimated departure times as spoken hours/minutes. Optional codeshare reading is off by default. Default language gap is 1.5 seconds (adjustable to 0.8 or 2.5 seconds). Both Cantonese-English-Mandarin and Cantonese-Mandarin-English sequences are selectable.
 
 These are original simulation templates, not an official transcript. Public references: [passenger recording of CX380 gate change announcement](https://www.youtube.com/watch?v=lA3BtoRVrHo) and [Cathay boarding instructions](https://flights.cathaypacific.com/zh_HK/travel-information/group-boarding.html). A single recording does not establish a universal language order. The synthesised chime is original; browser-native speech has no added terminal reverb and voice quality depends on the device.
+
+### Destination typography
+
+English destination names are normalised to name-style capitals (Nagoya, Numazu, Tokyo / Narita, Hong Kong, Rio de Janeiro) rather than ALL CAPS. Existing saved uppercase destinations are formatted when displayed, spoken, opened for editing and saved; browser storage is not reset.
